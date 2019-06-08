@@ -48,9 +48,7 @@
     </tbody>
 </table>
 <script>
-
 var base_url=location.protocol + '//' + location.host + location.pathname;
-
 $("#search_button").click(function(){
     var final_url=base_url.replace(/\/$/, "");
     title_value=$("#title").val();
@@ -67,6 +65,5 @@ $("#search_button").click(function(){
     }
     window.location.replace(final_url);
 });
-
 </script>
 {% endblock %}
